@@ -1,0 +1,16 @@
+name: devbox-customization
+image: MicrosoftVisualStudio_visualstudioplustools_vs-2022-ent-general-win11-m365-gen2
+hostInformation: general_i_8c32gb256ssd_v2
+supportsHibernation: false
+setupTasks:
+  - task: winget
+    inputs:
+      package: 'Docker.DockerDesktop'
+      runAsUser: true
+      override: 'install --quiet --accept-license'
+  - task: logout
+    inputs:
+      runAsUser: true
+  - task: customize
+    inputs:
+      runAsUser: true

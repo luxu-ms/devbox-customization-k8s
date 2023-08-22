@@ -1,0 +1,1 @@
+wsl -u root -e ./enable-k8s.sh

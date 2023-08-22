@@ -1,1 +1,1 @@
-# devbox-customization-k8s
+# devbox-customization-openai
