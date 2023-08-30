@@ -6,11 +6,9 @@ setupTasks:
   - task: winget
     inputs:
       package: 'Docker.DockerDesktop'
-      runAsUser: true
+      runAsUser: false
       override: 'install --quiet --accept-license'
-  - task: logout
-    inputs:
-      runAsUser: true
+  - task: pactchdocker
   - task: customize
     inputs:
       runAsUser: true

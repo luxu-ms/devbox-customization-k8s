@@ -1,0 +1,2 @@
+name: patchdocker
+command: .\main.ps1
