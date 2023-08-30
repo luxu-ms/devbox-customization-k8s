@@ -8,7 +8,8 @@ setupTasks:
       package: 'Docker.DockerDesktop'
       runAsUser: false
       override: 'install --quiet --accept-license'
-  - task: pactchdocker
   - task: customize
     inputs:
       runAsUser: true
+  - task: pactchdocker
+
